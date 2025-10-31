@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - E-Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">E-Shop</div>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="about">About</a></li>
+                <li><a href="#" data-page="products" class="active">Products</a></li>
+                <li>
+                    <a href="#" data-page="cart" class="cart-icon">
+                        Cart
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Loading State -->
+        <div id="loading" class="loading">Loading product...</div>
+
+        <!-- Product Page -->
+        <div id="productPage" class="product-container hidden">
+            <div class="product-image">
+                <img id="productImage" src="" alt="Product">
+            </div>
+            <div class="product-details">
+                <h1 id="productTitle" class="product-title"></h1>
+                <div class="product-rating">
+                    <span class="stars" id="productStars"></span>
+                    <span class="rating-text" id="productRating"></span>
+                </div>
+                <div class="product-price" id="productPrice"></div>
+                <span class="product-category" id="productCategory"></span>
+                <p class="product-description" id="productDescription"></p>
+                <button class="add-to-cart-btn floating" id="addToCartBtn">
+                    🛒 Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Cart Page -->
+        <div id="cartPage" class="cart-container hidden">
+            <h1 class="cart-title">Shopping Cart</h1>
+            <div id="cartContent">
+                <div class="cart-empty">Your cart is empty</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-about">
+                <h3>About E-Shop</h3>
+                <p>E-Shop is your premier online shopping destination for quality products at affordable prices. We're
+                    committed to providing exceptional customer service and a seamless shopping experience.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Commerce St, City, Country</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> support@eshop.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="styles/script.js"></script>
+</body>
+
+</html>
